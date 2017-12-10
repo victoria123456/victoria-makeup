@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title> Demo | Responsive Web</title>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+		<link href="styles/main.css" type="text/css" rel="stylesheet">
+    
+</head>        
+<body>       
+        
+<div id="wrapper">
+		
+			<header>
+				
+				<nav id="skipTo">
+					<ul>
+						<li>
+							<a href="#main" title="Skip to Main Content">Skip to Main Content</a>
+						</li>
+					</ul>
+				</nav>
+				
+				
+				
+				<nav>
+					<ul>
+						<li><a href="index.html" title="Home">Inicio</a></li>
+						<li><a href="#" title="About">Galeria</a></li>
+						<li><a href="#" title="Contact">Cont&aacute;ctenos</a></li>
+					</ul>
+				</nav>
+				
+				<div id="banner">
+				<img src="images/286chico.png" alt="banner" />
+				</div>
+			</header>	
+
+
+
+<div id="content">
+
+<h1>Galeria de Imagenes</h1>
+<div class="gallery">
+  
+    <img src="images/galeria1.jpg" alt="Fjords" onclick="myFunction(this);" >
+
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  
+    <img  src="images/galeria2.jpg" alt="Forest" onclick="myFunction(this);" >
+ 
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  
+    <img  src="images/galeria3.jpg" alt="Northern Lights" onclick="myFunction(this);">
+ 
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+ <!-- <a target="_blank" href="images/galeria3.jpg">-->
+    <img  src="images/galeria3.jpg" alt="Northern Lights" onclick="myFunction(this);">
+ <!-- </a>-->
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="gallery">
+  
+    <img  src="images/galeria4.jpg" alt="Mountains" onclick="myFunction(this);">
+  
+  <div class="desc">Add a description of the image here</div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img class="modal-content" id="expandedImg" >
+  <div id="imgtext"></div>
+</div>
+
+      </div>      
+	    <div id="footer">
+     	<div class="copyright">
+
+        </div>
+    	<div class="footer_links"> 
+        
+        </div>  
+    
+    </div>
+		</div>
+        
+ <script>
+function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    var imgText = document.getElementById("imgtext");
+    expandImg.src = imgs.src;
+    imgText.innerHTML = imgs.alt;
+    expandImg.parentElement.style.display = "block";
+}
+</script>
+    
+	</body>
+</html>

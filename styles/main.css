@@ -1,0 +1,240 @@
+/* Reset
+------------------------------------------------------------ */
+* { margin: 0; padding: 0; }
+html { overflow-y: scroll;}
+body {
+	font-size: 13px;
+	color: #666666;
+	font-family: Arial, helvetica, sans-serif;
+	background-color: #E2C7B3;
+			
+}
+ol, ul { list-style: none; margin: 0;}
+ul li { margin: 0; padding: 4px;}
+h1  { margin-bottom: 20px; color: #b19898;}	
+h2  {
+	margin-bottom: 10px;
+	color: #815332;
+	
+	font-size: 20px;
+}
+a, img {
+	outline: none;
+	border: none;
+	color: #000;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+p { margin: 0 0 10px; line-height: 1.4em; font-size: 1.0em;}
+img { display: block; margin-bottom: 10px;}
+aside { font-style: italic; font-size: 0.9em;}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section { 
+    display: block;
+	}
+a:hover {
+	color: #FFF;
+}	
+	
+hr {
+
+	background-color: #FFF;
+	margin-bottom: 20px;
+}	
+/* Structure */
+
+
+#wrapper {
+	width: 96%;
+	max-width: 1024px;
+	margin: auto;
+	padding: 1%;
+	} 
+
+	#main {
+	
+	/*margin-right: 2%;*/
+	width: 29%;
+	float: left;
+	padding: 0px 15px 10px 25px;
+	text-align: justify;
+		}		
+		
+#main img {
+	
+	/*margin-right: 2%;*/
+	width: 100%;
+	alignment-adjust: central;
+	border-radius: 5px;
+		}			
+
+/* Logo H1 */
+header h1 {
+	height: 70px;
+	width: 160px;
+	float: left;
+	display: block;
+	background: url(../images/demo.gif) 0 0 no-repeat;
+	text-indent: -9999px;
+	}
+		
+/* Nav */
+header nav {
+	
+    float: left;
+    margin-top: 10px;
+    width: 100%;
+    background-color: #b19898; opacity: 0.5;
+    border-radius: 5px;
+    padding: 6px 0px 6px 0px;
+    text-align: right;
+
+	}
+	
+	header nav li {
+		display: inline;
+		margin-left: 15px;
+		}
+
+#skipTo {
+	display: none;
+	background-color: #999;
+	}
+	#skipTo li {
+		background: #b1fffc;
+		}
+
+/* Banner */			
+#banner {
+	float: left;
+	margin-bottom: 15px;
+	width: 100%;
+	background-color: #b19898;
+	border-radius: 5px;
+	}
+
+#banner img {
+	width: 100%;
+	alignment-adjust: central;
+	border-radius: 5px;
+	
+	}	
+
+/* Media Queries */
+@media screen and (max-width: 480px) {
+
+	#skipTo {
+		display: block;
+		}
+	
+	header nav, #main, aside {
+		float: left;
+		clear: left;
+		margin: 0 0 10px; 
+		width: 100%;
+		}	
+		header nav li {
+			margin: 0;
+			background: #efefef;
+			display: block;
+			margin-bottom: 3px;
+			}
+			header nav a {
+				display: block;
+				padding: 10px;
+				text-align: center;
+				}			
+}
+#footer{
+clear:both;
+width: auto;
+height:37px;
+color: #fff;
+background-color:#b19898;
+max-width: 1024px;
+border-radius: 5px;
+}
+
+/* css Galeria imagenes */
+div.gallery {
+    margin: 10px;
+    border: 1px solid #b19898;
+    float: left;
+    width: 180px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+	
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
+/*modal*/
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.container {
+        display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+
+.gallery img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.gallery img:hover {
+    opacity: 1;
+}
+
+/* Expanding image text */
+#imgtext {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
